@@ -1,7 +1,7 @@
 // After asking the user to insert a word, create a function to determine whether said word is palindrome
 // Asking user
 do {
-    var userWord = prompt("Hello, please write a word to see if it is palindrome!");    
+    var userWord = prompt("Hello, please type a word to see if it is palindrome!");    
 } while (!isNaN(userWord));
 
 // Function declaration (function to check if the prompted word is palindrome or not)
