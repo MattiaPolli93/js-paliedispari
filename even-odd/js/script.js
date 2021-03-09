@@ -6,11 +6,16 @@ do {
     var userEvenOdd = (prompt("Now type either EVEN or ODD:")).toLowerCase();
 } while ((isNaN(userNumber) || (userNumber > 5)) || (!isNaN(userEvenOdd)));
 
+// Displaying user's number
+console.log(userNumber);
+
 var sum = userNumber;
 
 // Function declaration (to generate a random number)
 function randomNumber() {
     var randomNumber = Math.floor(Math.random() * 5 + 1);
+    // Displaying computer number
+    console.log(randomNumber);
     return randomNumber;
 }
 
@@ -34,5 +39,4 @@ if (isEven(sum)) {
     } else {
         alert("You won! The sum " + sum + " is odd")
     }
-}    
-    
+}
