@@ -3,8 +3,11 @@
 // Variables (asking the user)
 do {
     var userNumber = parseInt(prompt("Choose a number between 1 and 5:"));
+} while (!(userNumber > 0 && userNumber <= 5));
+
+do {    
     var userEvenOdd = (prompt("Now type either EVEN or ODD:")).toLowerCase();
-} while ((isNaN(userNumber) || (userNumber > 5)) || (!isNaN(userEvenOdd)));
+} while (userEvenOdd != "even" && userEvenOdd != "odd");
 
 // Displaying user's number
 console.log(userNumber);
